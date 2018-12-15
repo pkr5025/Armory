@@ -1,21 +1,13 @@
 #pragma once
+#include "Card.h"
+#include <vector>
 
-
-enum suit { Spades=1, Hearts, Diamonds, Clubs };
-enum value { Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King };
-
-class card {
+class deck {
 public:
-	card();
-	card( suit s, value v);
-	void displaycard();
-	suit get_suit();
-	value get_value();
-	bool operator==(const card &other) const;
-	bool operator!=(const card &other) const;
+	deck(); // default constructor makes a standard 52 card deck
+	card draw(); // draws a card
+	card top(); // peeks at the top card of the deck
+	void shuffledeck(); // shuffles the deck
 private:
-	void displayvalue(value v);
-	void displaysuit(suit s);
-	suit card_suit;
-	value card_value;
+	std::vector<card> currentdeck;
 };
