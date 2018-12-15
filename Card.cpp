@@ -17,6 +17,13 @@ suit card::get_suit() {
 value card::get_value() {
 	return card_value;
 }
+bool card::operator==(const card &other) const {
+	return other.card_suit == this->card_suit && other.card_value == this->card_value;
+}
+bool card::operator!=(const card &other) const {
+	return !(other == *this);
+}
+
 void card::displayvalue(value v) {
 	switch (v) {
 	case Ace:
