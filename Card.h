@@ -11,6 +11,8 @@ public:
 	void displaycard();
 	suit get_suit();
 	value get_value();
+	bool operator==(const card &other) const;
+	bool operator!=(const card &other) const;
 private:
 	void displayvalue(value v);
 	void displaysuit(suit s);
