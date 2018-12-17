@@ -21,6 +21,8 @@ int main()
 	player2.getinitialhand(thedeck);
 	player3.getinitialhand(thedeck);
 
+	player1.displayhand();
+
 	
 
 //	thedeck.shuffledeck();  //Uncomment to shuffle
