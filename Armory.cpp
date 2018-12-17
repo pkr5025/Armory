@@ -17,15 +17,21 @@ int main()
 	int winningscore;
 	cin >> winningscore;
 
+	player1.getinitialhand(thedeck);
+	player2.getinitialhand(thedeck);
+	player3.getinitialhand(thedeck);
+
+	
+
 //	thedeck.shuffledeck();  //Uncomment to shuffle
 
 	// start the game and play until one player earns enough points
-	while (player1.getscore() < winningscore && player2.getscore() < winningscore && player3.getscore() < winningscore) {
-		while()
-		player1.getinitialhand(thedeck);
-		player2.getinitialhand(thedeck);
-		player3.getinitialhand(thedeck);
-	}
+//	while (player1.getscore() < winningscore && player2.getscore() < winningscore && player3.getscore() < winningscore) {
+//		while()
+//		player1.getinitialhand(thedeck);
+//		player2.getinitialhand(thedeck);
+//		player3.getinitialhand(thedeck);
+//	}
 
 	
 
