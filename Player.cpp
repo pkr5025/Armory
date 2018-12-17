@@ -22,6 +22,11 @@ card player::playcard(card c) {
 		throw std::logic_error("Trying to play a card you don't have you CHEATER!");
 	}
 }
+void player::displayhand() {
+	for (auto i : hand) {
+		i.displaycard();
+	}
+}
 void player::displayscore() {
 	std::cout << score << std::endl;
 }
