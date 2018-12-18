@@ -11,18 +11,18 @@ int main()
 {
 	// Initializations
 	deck thedeck;
-	player player1;
-	player player2;
-	player player3;
+	humanplayer hplayer1;
+	player *player1 = & hplayer1;
+
 	int winningscore;
 	cin >> winningscore;
 
-	player1.getinitialhand(thedeck);
-	player2.getinitialhand(thedeck);
-	player3.getinitialhand(thedeck);
+//	thedeck.shuffledeck();  //Uncomment to shuffle
 
-	player1.displayhand();
-
+	player1->getinitialhand(thedeck);
+	player1->displayhand();
+	player1->playcard();
+	
 	
 
 //	thedeck.shuffledeck();  //Uncomment to shuffle
