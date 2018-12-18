@@ -7,7 +7,7 @@
 
 deck::deck(){
 	for (int j = 1; j < 5; j++) {
-		for (int i = 1; i < 14; i++) {
+		for (int i = 2; i < 15; i++) {
 			currentdeck.push_back(card(static_cast<suit>(j), static_cast<value>(i)));
 		}
 	}
