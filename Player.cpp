@@ -62,6 +62,8 @@ card humanplayer::playcard() {
 		cardvalue = Ace;
 	else if (n == "k")
 		cardvalue = King;
+	else if (n == "q")
+		cardvalue = Queen;
 	else if (n == "j")
 		cardvalue = Jack;
 	else {
